@@ -1,22 +1,149 @@
-body {
-    background-color: #333;
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+body{
+    min-height: 100vh;
 }
 
-.error-message,
+/* Estilos para el main */
+main {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0; /* Añade espacio alrededor del contenido */
+}
+
+/* Estilos para el mensaje de éxito */
 .success-message {
-    background-color: #dc3545;
+    width: 100%;
+    background-color: #28a745;
     color: #fff;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 15px;
+    border-radius: 8px;
     margin-bottom: 20px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.success-message a {
+/* Estilos para el mensaje en la alerta de éxito */
+.success-message .alert-message {
+    flex: 1;
+    text-align: left;
+}
+
+/* Estilos para el enlace "Ver Carrito" en la alerta de éxito */
+.success-message .badge {
     color: #fff;
-    text-decoration: none
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #218838;
+    transition: background-color 0.3s;
+}
+
+/* Estilos para el enlace "Ver Carrito" al pasar el mouse en la alerta de éxito */
+.success-message .badge:hover {
+    background-color: #1e7e34;
+    color: #fff;
+}
+
+/* Estilos para el contenedor principal */
+.main-container {
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la sección de detalles del producto */
+.product-details-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para la imagen del producto */
+.product-image {
+    flex: 1;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilos para la sección de detalles del producto */
+.product-details {
+    flex: 2;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: #fff;
+}
+
+.product-info h2,
+.product-info h3,
+.product-info p {
+    margin: 0;
+}
+
+/* Estilos para los botones */
+.buttons {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons .btn {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.mas{
+    background-color: rgb(58, 33, 103);
+    width: 100%;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.buttons .btn:hover {
+    background-color: #0056b3;
+}
+
+.mas:hover{
+    background-color: rgb(77, 49, 128);
+}
+
+@media  (max-width: 768px) {
+    .success-message{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .badge{
+        width: 100%;
+    }
+    .product-details-container{
+        flex-direction: column;
+        gap: 20px;
+    }
 }

@@ -2,7 +2,7 @@
 	
 	# Conexion a la base de datos #
 	function conexion(){
-		$pdo = new PDO('mysql:host=localhost;dbname=atomic_db', 'root', '');
+        $pdo = new PDO('mysql:host=monorail.proxy.rlwy.net;port=47577;dbname=railway', 'root', 'rnVtHWboMsdmsuFSdZgoPUWPwEGSmJAE');
 		return $pdo;
 	}
 

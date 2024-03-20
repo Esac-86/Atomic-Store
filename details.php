@@ -34,7 +34,7 @@
                 <div class="alert-message">
                     <?php echo $mensaje; ?>
                 </div>
-                <a href="http://localhost/atomicstore/shop-cart.php" class="badge">Ver Carrito</a>
+                <a href="checkout.php" class="badge">Ver Carrito</a>
             </div>
         <?php endif; ?>
         <div class="product-details-container">

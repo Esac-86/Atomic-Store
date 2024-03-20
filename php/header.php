@@ -33,7 +33,7 @@
                     <a class="nav-link"><img src="img/banner++++/icons8-lupa-64.png" width="25"" alt=""></a>
                 </li> -->
                 
-                    <a class="nav-link" href="shop-cart.php"><img src="img/banner++++/icons8-carrito-de-compras-64.png" alt="">
+                    <a class="nav-link" href="checkout.php"><img src="img/banner++++/icons8-carrito-de-compras-64.png" alt="">
                         (<?php
                             $totalProductosCarrito = 0;
 

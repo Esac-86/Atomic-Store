@@ -3,13 +3,13 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <div class="wrapper">
-        <?php
-        include 'php/config.php';
-        include 'php/conexion.php';
-        include 'php/Carrito.php';
-        include 'php/Header.php';
-        include 'php/check.php';
-        ?>
+ <?php
+    include 'php/config.php';
+    include 'php/conexion.php';
+    include 'php/Carrito.php';
+    include 'php/header.php';
+    include 'php/check.php';
+?>
         <br>
         <section class="cart">
             <h2>PAGO</h2>
@@ -52,7 +52,7 @@
                             <div class="form-content">
                                 <label for="pais">Pais:</label>
                                 <select id="pais" name="pais">
-                                    <option value="" selected disabled>Selecciona tu país</option>
+                                    <option value="default" selected>Selecciona tu país</option>
                                     <!-- Resto de opciones de países -->
                                 </select>
                             </div>
@@ -60,14 +60,14 @@
                             <div class="form-content">
                                 <label for="estado">Estado/Departamento:</label>
                                 <select id="estado" name="estado">
-                                    <option value="" selected disabled>Selecciona tu estado/departamento</option>
+                                    <option value="default" selected>Selecciona tu estado/departamento</option>
                                     <!-- Opciones de estados cargadas dinámicamente -->
                                 </select>
                             </div>
 
                             <div class="form-content">
                                 <select id="ciudad" name="ciudad">
-                                    <option value="" selected disabled>Selecciona una ciudad</option>
+                                    <option value="default" selected>Selecciona una ciudad</option>
                                     <!-- Opciones de ciudades cargadas dinámicamente -->
                                 </select>
 

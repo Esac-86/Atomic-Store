@@ -1,12 +1,14 @@
 function validarCampos() {
-
-
     var nombre = document.getElementById('nombre').value;
     var telefono = document.getElementById('telefono').value;
     var email = document.getElementById('email').value;
     var cedula = document.getElementById('cedula').value;
     var direccion = document.getElementById('direccion').value;
     var codigo = document.getElementById('codigo').value;
+
+    var pais = document.getElementById('pais').value;
+    var estado = document.getElementById('estado').value;
+    var ciudad = document.getElementById('ciudad').value;
 
     // Expresiones regulares para validar los formatos de los campos
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -16,7 +18,19 @@ function validarCampos() {
     var codigoRegex = /^\d+$/;
 
     // Verificar que todos los campos estén llenos y que cumplan con las validaciones
-    if (nombre !== '' && telefono !== '' && email !== '' && direccion !== '' && ciudad !== '' && codigo !== '') {
+    if (
+        nombre !== '' &&
+        telefono !== '' &&
+        email !== '' &&
+        direccion !== '' &&
+        ciudad !== '' &&
+        codigo !== '' &&
+        pais !== '' &&
+        estado !== '' &&
+        pais !== 'default' &&
+        estado !== 'default' &&
+        ciudad !== 'default'
+    ) {
         if (!emailRegex.test(email)) {
             // Mostrar una alerta de SweetAlert2 si el correo no es válido
             Swal.fire({

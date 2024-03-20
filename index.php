@@ -16,7 +16,7 @@ include 'php/header.php';
             <div class="alert-message">
                 <?= $mensaje; ?>
             </div>
-            <a href="shop-cart.php" class="badge">Ver Carrito</a>
+            <a href="checkout.php" class="badge">Ver Carrito</a>
         </div>
     <?php } ?>
 

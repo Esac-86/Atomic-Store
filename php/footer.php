@@ -12,7 +12,7 @@
             </div>
         </div> 
         
-        <div class="text-center"><span class="co">©-2023 Todos los derechos reservados</span></div>
+        <div class="text-center"><span class="co">©-2024 Todos los derechos reservados</span></div>
         
         <div class="f2">
             <img src="img/blanco_completo.png" alt="">

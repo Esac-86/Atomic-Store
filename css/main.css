@@ -1,0 +1,85 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.general {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #333;
+    width: 100%;
+    height: auto;
+    padding: 0px 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+body{
+    width: fit-content;
+    margin: auto;
+    background-color: rgb(48, 48, 48);
+}
+
+.co {
+    color: #ADADAD;
+}
+
+.href {
+    background-color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.navbar a {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* .navbar .nav-item-active{
+    width: 55px;
+    display: flex;
+    align-items: center;
+} */
+
+.nav-link img{
+    width: 20px;
+}
+
+/* Personaliza el color del scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555555;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #2d2d2d;
+}
+
+@media (max-width: 950px) {
+    .general .imagen img{
+        width: 300px;
+    }
+}
+
+@media (max-width: 658px) {
+    .general {
+        flex-direction: column;
+    }
+}

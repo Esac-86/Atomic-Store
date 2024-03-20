@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial,Helvetica, sans-serif;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.cart-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+}
+
+.form-container h2{
+    font-size: 40px;
+    color: #000000fc;
+    font-weight: bolder;
+}
+
+.form-container p{
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.formulario{
+    padding: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.372);
+    width: 100%;
+    text-align:left;
+    display:flex;
+    flex-direction:column;
+    background-color: #ffffff;
+}
+
+.checks{
+   display: flex;
+}
+
+.checks p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #72db58;
+    font-weight: bolder;
+}
+
+.form-group {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:20px;
+    margin-bottom:40px;
+}
+
+.form-content{
+    display:flex;
+    flex-direction: column;
+}
+
+
+label{
+    color:#000000;
+    font-weight: bolder;
+    font-size:15px;
+    margin-bottom:15px;
+}
+
+input, textarea, select{
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #eee;
+    border:0;
+    outline:  none;
+    color:#727272fc;
+    font-size:16px;
+}
+
+@media(max-width:991px){
+    
+    .formulario{
+        width: 100%;
+    }
+    form{
+        width:100%;
+    }
+    .form-group{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+        margin-bottom: 20px;
+    }
+    
+}
+@media (max-width: 950px) {
+    .cart-items{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+/* Add a media query for larger screens */
+@media (max-width: 768px) {
+}
+
+.payment-methods {
+    padding: 25px;
+    background-color: #e0e0e0;
+}
+
+.payment-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure icons wrap to the next line on smaller screens */
+}
+
+.payment-icons img {
+    max-width: 40px;
+    margin: 0 10px;
+}
+
+
+
+/* METODOS REALES EN EL PAGO */
+        
+    /* APP PAYPAL */
+    
+        /* Media query for mobile viewport */
+        @media screen and (max-width: 400px) {
+            #paypal-button-container {
+                width: 100%;
+            }
+        }
+        
+        /* Media query for desktop viewport */
+        @media screen and (min-width: 400px) {
+            #paypal-button-container {
+                width: 250px;
+                display: inline-block;
+            }
+        }
+        

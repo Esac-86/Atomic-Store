@@ -6,12 +6,20 @@
     <title>Actualizar Usuario</title>
     <style>
         /* Estilos generales */
+        html{
+            height: 100vh;
+            background-color: rgb(48, 48, 48);
+        }
+
         body {
+            max-width: 100%;
+            height: 100%;
             font-family: Arial, sans-serif;
             background-color: #333;
             color: #fff;
             margin: 0;
             padding: 0;
+            height: fit-content;
         }
 
         .container {

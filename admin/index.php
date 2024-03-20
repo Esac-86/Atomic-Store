@@ -4,7 +4,7 @@
     <head>
         <?php include "./inc/head.php"; ?>
     </head>
-    <body style="height: 100%;">
+    <body>
         <?php
 
             if(!isset($_GET['vista']) || $_GET['vista']==""){
@@ -36,7 +36,7 @@
         ?>
         <style>
         body {
-            height: 100%;
+            height: fit-content;
             width: 100vw;
             background-color: rgb(48, 48, 48);
             color: white;

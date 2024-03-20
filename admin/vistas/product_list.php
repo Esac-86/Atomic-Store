@@ -1,12 +1,22 @@
 <style>
     /* Estilos para la lista de productos */
+    html{
+            height: 100vh;
+            background-color: rgb(48, 48, 48);
+        }
+
+        body {
+            max-width: 100%;
+            height: 100%;
+        }
+
     .product-list {
         color: white;
         padding: 20px;
         border-radius: 10px;
+        background-color: rgb(48, 48, 48);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
-        background-color: #333;
     }
 
     .product-list hr {
@@ -15,6 +25,12 @@
     }
 
     .product-list .media {
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        background-color: #333;
         align-items: center;
     }
 
@@ -188,8 +204,8 @@
         $conexion = null;
         echo '<div class="product-list">' . $tabla . '</div>';
 
-        if ($total >= 1 && $pagina <= $Npaginas) {
-            echo paginador_tablas($pagina, $Npaginas, $url, 7);
-        }
+        // if ($total >= 1 && $pagina <= $Npaginas) {
+        //     echo paginador_tablas($pagina, $Npaginas, $url, 7);
+        // }
     ?>
 </div>

@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/shop-cart.css">
-    <link rel="stylesheet" href="css/details.css">
     <link rel="stylesheet" href="css/checkout.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="shortcut icon" href="img/banner++++/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -22,15 +23,17 @@
     <title>Atomic Store</title>
 </head>
 <!-- bg-dark trext-white -->
-<body class="bg-dark trext-white">
+<body style="background-color:  rgb(48, 48, 48); ">
     <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> -->
     <nav class="general">
-        <a href="index.php" class="imagen"><img src="img/banner++++/logo.png" alt="" width="300px"> </a>
+        <a href="index.php" class="imagen"><img src="img/banner++++/logo.png" alt="" width="200px"> </a>
         <div class="item">
             <ul class="navbar">
-
-                <li class="nav-item active">
-                    <a class="nav-link" href="checkout.php"><img src="img/banner++++/icons8-carrito-de-compras-64.png" alt="">
+                <!-- <li class="nav-item-active">
+                    <a class="nav-link"><img src="img/banner++++/icons8-lupa-64.png" width="25"" alt=""></a>
+                </li> -->
+                
+                    <a class="nav-link" href="shop-cart.php"><img src="img/banner++++/icons8-carrito-de-compras-64.png" alt="">
                         (<?php
                             $totalProductosCarrito = 0;
 
@@ -46,10 +49,9 @@
                             echo $totalProductosCarrito;
                             ?>)
                     </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="admin/index.php"><img src="img/banner++++/icons8-administrador-96 (1).png" alt="" width="40px"></a>
-                </li>
+              
+                    <a class="nav-link" href="admin/index.php" target="blank"><img src="img/banner++++/icons8-administrador-96 (1).png" alt="" width="40px"></a>
+                
             </ul>
         </div>
     </nav>

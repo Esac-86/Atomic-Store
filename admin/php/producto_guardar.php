@@ -119,7 +119,7 @@
      * @return string URL de la imagen.
      */
     function obtener_url($ruta) {
-        $base_url = 'http://localhost/atomicstore/admin/'; // Reemplaza esta URL con la URL de tu proyecto
+        $base_url = 'http://atomicstore.000.pe/admin/'; // Reemplaza esta URL con la URL de tu proyecto
         $ruta_relativa = str_replace('../', '', $ruta);
         return $base_url . $ruta_relativa;
     }

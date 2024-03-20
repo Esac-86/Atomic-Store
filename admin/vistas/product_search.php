@@ -1,6 +1,15 @@
 <div class="container pb-6 pt-12">
     <style>
         /* Estilos para el contenedor principal */
+        html{
+            height: 100vh;
+            background-color: rgb(48, 48, 48);
+        }
+        body{
+            max-width: 100%;
+            height: 100%;
+        }
+        
         .container {
             max-width: 800px;
             margin: 40px auto;

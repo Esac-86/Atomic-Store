@@ -1,3 +1,77 @@
+<style>
+    /* Estilos para la lista de productos */
+    .media {
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        background-color: #333;
+    }
+
+    .media hr {
+        border-color: #555;
+        margin: 20px 0;
+    }
+
+    .media .media-left {
+        align-items: center;
+    }
+
+    .media .media-left .image {
+        margin-right: 20px;
+    }
+
+    .media .media-left .image p {
+        margin-bottom: 0;
+    }
+
+    .media .media-content {
+        flex: 1;
+    }
+
+    .media .media-content p {
+        margin-bottom: 5px;
+    }
+
+    .media .media-content .has-text-right {
+        margin-top: 10px;
+    }
+
+    .media .button {
+        margin-right: 10px;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+    }
+
+    .media .button.is-success {
+        background-color: #28a745;
+        color: white;
+    }
+
+    .media .button.is-success:hover {
+        background-color: #218838;
+    }
+
+    .media .button.is-danger {
+        background-color: #dc3545;
+        color: white;
+    }
+
+    .media .button.is-danger:hover {
+        background-color: #c82333;
+    }
+
+    /* Estilos para los iconos */
+    .fa {
+        margin-right: 5px;
+    }
+</style>
+
 <?php
 $inicio = ($pagina > 0) ? (($pagina * $registros) - $registros) : 0;
 $tabla = "";
@@ -51,9 +125,8 @@ if ($total >= 1 && $pagina <= $Npaginas) {
                         </p>
                     </div>
                     <div class="has-text-right">
-                        <a href="index.php?vista=product_img&product_id_up=' . $rows['ID'] . '" class="button is-link is-rounded is-small">Imagen</a>
-                        <a href="index.php?vista=product_update&product_id_up=' . $rows['ID'] . '" class="button is-success is-rounded is-small">Actualizar</a>
-                        <a href="' . $url . $pagina . '&product_id_del=' . $rows['ID'] . '" class="button is-danger is-rounded is-small">Eliminar</a>
+                        <a href="index.php?vista=product_update&product_id_up=' . $rows['ID'] . '" class="button is-success is-rounded is-small"><i class="fa fa-arrow-down"></i> Actualizar</a>
+                        <a href="' . $url . $pagina . '&product_id_del=' . $rows['ID'] . '" class="button is-danger is-rounded is-small"><i class="fa fa-trash"></i> Eliminar</a>
                     </div>
                 </div>
             </article>
@@ -76,7 +149,7 @@ if ($total > 0 && $pagina <= $Npaginas) {
 $conexion = null;
 echo $tabla;
 
-if ($total >= 1 && $pagina <= $Npaginas) {
-    echo paginador_tablas($pagina, $Npaginas, $url, 7);
-}
+// if ($total >= 1 && $pagina <= $Npaginas) {
+//     echo paginador_tablas($pagina, $Npaginas, $url, 7);
+// }
 ?>
